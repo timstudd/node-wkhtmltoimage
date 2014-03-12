@@ -1,0 +1,20 @@
+{
+  "name": "wkhtmltoimage",
+  "version": "0.1.0",
+  "description": "A wrapper for the wkhtmltoimage HTML to PNG converter using WebKit",
+  "author": {
+    "name": "Tim Studd",
+    "email": "tim@timstudd.com",
+    "url": "http://www.timstudd.com/"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timstudd/node-wkhtmltoimage.git"
+  },
+  "bugs": "http://github.com/timstudd/node-wkhtmltoimage/issues"
+}
