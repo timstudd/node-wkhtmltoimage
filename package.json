@@ -1,6 +1,6 @@
 {
   "name": "wkhtmltoimage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A wrapper for the wkhtmltoimage HTML to PNG converter using WebKit",
   "author": {
     "name": "Tim Studd",
