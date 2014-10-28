@@ -1,8 +1,7 @@
 node-wkhtmltoimage
 ==================
 
-A Node.js wrapper for the [wkhtmltoimage](http://wkhtmltopdf.org/) command line tool.  As the name implies, 
-it converts HTML documents to images using WebKit.  This is based on [node-wkhtmltopdf](https://github.com/devongovett/node-wkhtmltopdf).
+A Node.js wrapper for the [wkhtmltoimage](http://wkhtmltopdf.org/) command line tool.  It converts HTML documents to images using WebKit.  This was originally based on [node-wkhtmltopdf](https://github.com/devongovett/node-wkhtmltopdf) and was written for [Thumbsrc](https://github.com/timstudd/thumbsrc).
 
 ## Usage
 
@@ -10,18 +9,18 @@ it converts HTML documents to images using WebKit.  This is based on [node-wkhtm
 var wkhtmltoimage = require('wkhtmltoimage');
 
 // Optionally specify binary path
-var wkhtmltoimage = require('wkhtmltoimage').setCommand(__dirname + "/bin/wkhtmltoimage");
+var wkhtmltoimage = require('wkhtmltoimage').setCommand(__dirname + '/bin/wkhtmltoimage');
 
 // URL
 wkhtmltoimage.generate('http://example.com/', { pageSize: 'letter' })
-  .pipe(fs.createWriteStream('out.pdf'));
+  .pipe(fs.createWriteStream('out.jpg'));
   
 // HTML
 wkhtmltoimage.generate('<h1>Hello world</h1>')
   .pipe(res);
   
 // output to a file directly
-wkhtmltoimage.generate('http://example.com/', { output: 'out.pdf' });
+wkhtmltoimage.generate('http://example.com/', { output: 'out.jpg' });
 
 // Optional callback
 wkhtmltoimage.generate('http://example.com/', { pageSize: 'letter' }, function (code, signal) {
