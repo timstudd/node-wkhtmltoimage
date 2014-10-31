@@ -1,7 +1,7 @@
 node-wkhtmltoimage
 ==================
 
-A Node.js wrapper for the [wkhtmltoimage](http://wkhtmltopdf.org/) command line tool.  It converts HTML documents to images using WebKit.  This was originally based on [node-wkhtmltopdf](https://github.com/devongovett/node-wkhtmltopdf) and was written for [Thumbsrc](https://github.com/timstudd/thumbsrc).
+A Node.js wrapper for the [wkhtmltoimage](http://wkhtmltopdf.org/) command line tool.  It converts HTML documents to images using WebKit.  This was originally based on [node-wkhtmltopdf](https://github.com/devongovett/node-wkhtmltopdf) and was written for [thumbsrc.com](https://github.com/timstudd/thumbsrc.com).
 
 ## Usage
 
