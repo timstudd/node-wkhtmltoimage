@@ -36,7 +36,7 @@ function WKHtmlToImage() {
 		}
 		
 		var isUrl = /^(https?|file):\/\//.test(input);
-		args.push(isUrl ? input : '-'); // stdin if HTML given directly
+		args.push(isUrl ? '"' + input + '"' : '-'); // stdin if HTML given directly
 		args.push(output || '-');       // stdout if no output file
 
 		if (process.platform === 'win32') {
