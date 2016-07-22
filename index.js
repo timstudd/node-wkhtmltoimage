@@ -43,7 +43,7 @@ function WKHtmlToImage() {
 			var child = spawn(args[0], args.slice(1));
 		} else {
 			// this nasty business prevents piping problems on linux
-			var child = spawn('/bin/sh', ['-c', args.join(' ') + ' | cat']);
+			var child = spawn('/bin/sh', ['-c', args.join(' ')]);
 		}
 
 		if (callback) {
