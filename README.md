@@ -1,7 +1,7 @@
 node-wkhtmltoimage
 ==================
 
-A Node.js wrapper for the [wkhtmltoimage](http://wkhtmltopdf.org/) command line tool.  It converts HTML documents to images using WebKit.  This was originally based on [node-wkhtmltopdf](https://github.com/devongovett/node-wkhtmltopdf) and was written for [thumbsrc.com](https://github.com/timstudd/thumbsrc.com).
+A Node.js wrapper for the [wkhtmltoimage](http://wkhtmltopdf.org/) command line tool.  It converts HTML documents to images using WebKit.  This was originally based on [node-wkhtmltopdf](https://github.com/devongovett/node-wkhtmltopdf).
 
 ## Usage
 
@@ -14,11 +14,11 @@ var wkhtmltoimage = require('wkhtmltoimage').setCommand(__dirname + '/bin/wkhtml
 // URL
 wkhtmltoimage.generate('http://example.com/', { pageSize: 'letter' })
   .pipe(fs.createWriteStream('out.jpg'));
-  
+
 // HTML
 wkhtmltoimage.generate('<h1>Hello world</h1>')
   .pipe(res);
-  
+
 // output to a file directly
 wkhtmltoimage.generate('http://example.com/', { output: 'out.jpg' });
 
@@ -37,14 +37,14 @@ There is also an `output` option that can be used to write the output directly t
 
 ## Installation
 
-First, you need to install the wkhtmltoimage (included with wkhtmltopdf) command line tool on your system.  The easiest way to do this is to [download](http://wkhtmltopdf.org/) a prebuilt version for your system. 
+First, you need to install the wkhtmltoimage (included with wkhtmltopdf) command line tool on your system.  The easiest way to do this is to [download](http://wkhtmltopdf.org/) a prebuilt version for your system.
 
 Then install the node module, use `npm`:
 
     npm install wkhtmltoimage
-    
+
 Be sure `wkhtmltoimage` is in your PATH when you're done installing.  Alternatively, use .setCommand(path) to specify the binary path.
-    
+
 ## License
 
 MIT
