@@ -1,6 +1,6 @@
 {
   "name": "wkhtmltoimage",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A wrapper for the wkhtmltoimage HTML to Image converter using WebKit",
   "author": {
     "name": "Tim Studd",
