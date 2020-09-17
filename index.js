@@ -15,7 +15,7 @@ function WKHtmlToImage() {
 			options = {};
 		}
 		
-		var output = options.output;
+		var output = options.output.replace(/[^(\w|\\|\/| |:)]/gi, '');
 		delete options.output;
 		
 		var args = [this.command, '--quiet'];
